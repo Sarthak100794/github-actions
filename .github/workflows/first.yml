@@ -25,5 +25,5 @@ jobs:
       # Runs a single command using the runners shell
       - name: echo-stage
         run: |
-         - echo Hello, world
-         - echo "Sarthak"
+          echo Hello, world
+          echo "Sarthak"
