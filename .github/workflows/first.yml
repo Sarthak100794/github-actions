@@ -20,4 +20,3 @@ jobs:
       - run: |
          ls
          terraform init
-        working-directory: github-actions/assignment
