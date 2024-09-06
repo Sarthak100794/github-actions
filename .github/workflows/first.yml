@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./assignment
+        working-directory: assignment
     steps:
       - uses: hashicorp/setup-terraform@v3
         with:
