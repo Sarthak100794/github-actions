@@ -8,16 +8,15 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: assignment
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           path: main
       - name: terraform-init
+        working-directory: assignment
         uses: hashicorp/setup-terraform@v3
         with:
           terraform_version: "1.1.7"
-      - run: terraform init     
+      - run: terraform init
+      
