@@ -27,8 +27,17 @@
 #   deployments  = var.deployments
 # }
 
-module "s3" {
-  source = "./modules/s3"
-  bucket_name = var.s3_bucket_name
+#module "s3" {
+#  source = "./modules/s3"
+#  bucket_name = var.s3_bucket_name
+#}
+
+resource "aws_instance" "web" {
+  ami           = "ami-0d8c288225dc75373"
+  instance_type = "t3.micro"
+
+  tags = {
+    Name = "HelloWorld"
+  }
 }
 
