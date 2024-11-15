@@ -27,17 +27,10 @@
 #   deployments  = var.deployments
 # }
 
-#module "s3" {
-#  source = "./modules/s3"
-#  bucket_name = var.s3_bucket_name
-#}
-
-resource "aws_instance" "web" {
-  ami           = "ami-0fe06469108931c38"
-  instance_type = "t3.micro"
-   lifecycle {
-    ignore_changes = all
-  }
- 
+module "s3" {
+  source = "./modules/s3"
+  bucket_name = var.s3_bucket_name
 }
+
+
 
