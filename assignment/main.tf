@@ -30,10 +30,7 @@
 resource "aws_s3_bucket" "main" {
   bucket = "gsc-plugin-postsales"
 
-lifecycle {
-    ignore_changes = all
-    
-  }
+
 }
 
 
