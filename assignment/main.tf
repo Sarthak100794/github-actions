@@ -35,9 +35,9 @@
 resource "aws_instance" "web" {
   ami           = "ami-0d8c288225dc75373"
   instance_type = "t3.micro"
-
-  tags = {
-    Name = "HelloWorld"
+   lifecycle {
+    ignore_changes = all
   }
+ 
 }
 
