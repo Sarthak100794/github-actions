@@ -33,7 +33,7 @@
 #}
 
 resource "aws_instance" "web" {
-  ami           = "ami-0d8c288225dc75373"
+  ami           = "ami-00c3f300b084c22cd"
   instance_type = "t3.micro"
    lifecycle {
     ignore_changes = all
