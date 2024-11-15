@@ -67,7 +67,7 @@ variable "max_size" {
 variable "s3_bucket_name" {
   description = "Name of the S3 bucket"
   type = string
-  default = "par-bucket-sarthak"
+  default = "gsc-addons"
 }
 
 variable "ksa_name"{
